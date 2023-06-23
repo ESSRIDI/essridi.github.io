@@ -1,0 +1,78 @@
+$primary: #837800;
+$secondary: #5c5959;
+$success: #8cb911;
+$info: #26b4b4;
+$infodark: #057474;
+$warning: #f5a503;
+$danger: #890000;
+$mylight:#f7f5f3;
+$light: #f8ecdf;
+$white:#ffffff;
+$dark: #434141;
+$toodark: #292828;
+$darkerlight: #e7e0d5;
+$toodarkerlight: #c9c2b6;
+$ground: #cb9a3d;
+$lightolive: #cec988;
+$olive: #cbbd1b;
+$toolightolive: #d8d4a3;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "toodark": $toodark,
+  "darkerlight": $darkerlight,
+  "ground": $ground,
+  "lightolive": $lightolive,
+  "olive": $olive,
+  "toolightolive": $olive,
+  "mylight":$mylight,
+  "infodark":$infodark,
+  "toodarkerlight":$toodarkerlight,
+);
+
+#nav,
+#footer {
+  background: linear-gradient(
+    120deg,
+    rgb(255, 255, 255) 22%,
+    rgb(231, 224, 213) 100%
+  );
+}
+
+#home-section, #about-section, #resume-section, #projects-section, #contact-section {
+  scroll-margin-top: 6rem;
+}
+
+#company-name{
+    color:$primary;
+}
+
+$accordion-button-active-bg:$mylight;
+$accordion-button-active-color:$toodark;
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#work-tabs ,#education-tabs ,#skills-tabs ,#languages-tabs {
+  scroll-margin-top: 25em;
+  scroll-behavior: smooth;
+  }
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/mixins";
+
+//  import Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap";
