@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #region my stylesheets links-->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- #endregion my stylesheets links-->
+
+    <!--#region my scripts-->
+    <script src="./script.js" defer></script>
+
+    <!--#endregion my scripts-->
+
+    <!-- #region fontawesome links-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- #endregion fontawesome links-->
+
+    <!-- #region Bootstrap stylesheets-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- #endregion Bootstrap stylesheets-->
+
+    <!--#region bootstrap Js scripts-->
+    <script
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <!--#endregion bootstrap Js scripts-->
+
+    <!--#region Favicon-->
+    <link rel="icon" type="favicon" href="images/favicon.ico" />
+    <!--#endregion Favicon-->
+
+    <title>Portfolio</title>
+  </head>
+
+  <body class="bg-mylight">
+    <!-- #region HEADER-->
+    <header>
+      <a
+        class="z-3 position-absolute top-50 start-50 translate-middle"
+        href="#nav"
+      >
+        <i class="bi bi-arrow-down-square fa-6x"></i
+      ></a>
+      <!-- #region Carousel-->
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img
+              src="images/squared_map.webp"
+              class="d-block w-100 vh-100 object-fit-cover opacity-100"
+              alt="dotted map"
+            />
+            <div class="carousel-caption d-none d-md-block text-toodark">
+              <h5 class="display-4">www.kamel-essridi.com</h5>
+              <p class="lead">Welcome to my portfolio website.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="images/abstract1.webp"
+              class="d-block w-100 vh-100 object-fit-cover opacity-100"
+              alt="abstract background wires"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-4">Me, Kamel ESSRIDI</h5>
+              <p class="lead">
+                Web & Mobile Application Developer (Full Stack).
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/abstract2.webp"
+              class="d-block w-100 vh-100 object-fit-cover opacity-100"
+              alt="Abstract dash pattern background"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-4">Self-determined, Confident and Reliable</h5>
+              <p class="lead">Ready to work on your project.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- #endregion Carousel-->
+    </header>
+    <!-- #endregion HEADER-->
+
+    <!-- #region MAIN-->
+
+    <main>
+      <!-- #region Navbar -->
+
+      <nav
+        id="nav"
+        class="navbar navbar-expand-lg sticky-top shadow p-3 mb-5 rounded"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./images/logo_png-min.png" alt="logo KE" height="80px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#home-section"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#resume-section"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#projects-section"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contact-section"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <a href="#footer" class="p-3 text-ke text-ke-grey"
+              >More about me...</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- #endregion Navbar-->
+
+      <!-- #region Section Home-->
+      <section class="mb-5 mt-5" id="home-section">
+        <h2 class="display-1 p-3 text-end text-darkerlight">Home</h2>
+        <!-- IMG -> To be modified ... -->
+        <img
+          src="./images/my_photo.webp"
+          height="300px"
+          class="ke-thumbnail rounded mx-auto d-block"
+          alt="my ID photo"
+        />
+
+        <div class="row text-center m-0">
+          <i
+            class="col-12 col-lg-3 col-xxl-3 bi bi-person-bounding-box fa-5x text-lightolive"
+          ></i>
+          <div class="col-12 col-lg-9 col-xxl-6">
+            <h1 class="text-olive p-5">
+              <span class="fa-solid fa-laptop-code fa-1x text-dark p-3"></span
+              >Web & Mobile Application Developer (Full Stack)
+            </h1>
+
+            <!--#region one skills####-->
+            <div class="row p-0 m-0 d-flex">
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-brands fa-html5 fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">HTML 5</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-brands fa-css3-alt fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">CSS 3</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--#endregion one skills####-->
+
+            <!--#region two skills####-->
+            <div class="row p-0 m-0 d-flex">
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-brands fa-square-js fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">JavaScript</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-brands fa-react fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">React JS</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--#endregion one skills####-->
+
+            <!--#region three skills####-->
+            <div class="row p-0 m-0 d-flex">
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i class="col-2 fa-brands fa-php fa-2x text-end my-auto"></i>
+                  <h3 class="col-4 text-center my-auto">PHP</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-brands fa-symfony fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">Symfony</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--#endregion three skills####-->
+
+            <!--#region four skills####-->
+
+            <div class="row p-0 m-0 d-flex">
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-brands fa-windows fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">C#</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-half fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-brands fa-windows fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">VBA</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-half fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--#endregion four skills####-->
+            <!--#region five skills####-->
+            <div class="row p-0 m-0 d-flex">
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i
+                    class="col-2 fa-solid fa-database fa-2x text-end my-auto"
+                  ></i>
+                  <h3 class="col-4 text-center my-auto">MySQL</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-half fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="row pb-2">
+                  <i class="col-2 fa-solid fa-gear fa-2x text-end my-auto"></i>
+                  <h3 class="col-4 text-center my-auto">Tekla Open API</h3>
+                  <div class="col-6 text-start my-auto text-primary">
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star-fill fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                    <i class="bi bi-star fa-xl"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--#endregion five skills####-->
+          </div>
+        </div>
+      </section>
+
+      <!-- #endregion Section Home-->
+
+      <!-- #region Section About me-->
+
+      <section class="mb-5 mt-5" id="about-section">
+        <h1 class="display-1 p-3 text-end text-darkerlight">About Me</h1>
+
+        <div class="row text-center m-0">
+          <i
+            class="col-12 col-lg-3 col-xxl-3 bi bi-chat-right-quote fa-5x text-lightolive"
+          ></i>
+          <div class="col-12 col-lg-9 col-xxl-6 text-start">
+            <p class="lead p-2">
+              I recently took a major step forward to change my professional
+              path. I moved from structural steel Draughtsman with more than 6
+              years’ experience to become Web & Mobile Application Developer
+              (Full Stack). To reach my goal, each day for me is a new
+              challenge, a new adventure to deal with.
+            </p>
+            <p class="lead p-2">
+              I taught myself to be patient and wait for the right moment to
+              make the right decision. For many years and in my previous career
+              experiences, I was interested in automating tasks and making
+              things more dynamic.
+            </p>
+            <p class="lead p-2">
+              Pursuing this way, I have learned many programing languages’ like
+              C#, PHP , JavaScript, working with frameworks like Symfony…and
+              more ,also libraries like ReactJs, Twig and APIs’ of various
+              software’s like Tekla openApi, AutoCAD .NET API…and so on. Having
+              worked on many work environments, today, I have several skills
+              that allow me to bring a real plus to companies. That's why, I’m
+              always looking forward to new challenges.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion Section About me-->
+
+      <!-- #region Section Resume-->
+
+      <section class="mb-5 mt-5" id="resume-section">
+        <h1 class="display-1 p-3 text-end text-darkerlight">Resume</h1>
+
+        <div class="row text-center">
+          <i
+            class="col-12 col-lg-3 col-xxl-3 bi bi-file-earmark-person fa-5x text-lightolive"
+          ></i>
+          <div
+            class="col-12 col-lg-9 col-xxl-6 text-start text-darkerlight"
+            id="wrapper-tabs-section-resume"
+          >
+            <!-- #region Tabs nav-->
+            <ul
+              class="nav nav-tabs nav-fill"
+              id="resume-nav-list"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="work-tab"
+                  data-mdb-toggle="tab"
+                  href="#work-tabs"
+                  role="tab"
+                  aria-controls="work-tabs"
+                  aria-selected="true"
+                  >Work experience</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="education-tab"
+                  data-mdb-toggle="tab"
+                  href="#education-tabs"
+                  role="tab"
+                  aria-controls="education-tabs"
+                  aria-selected="false"
+                  >Education</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="skills-tab"
+                  data-mdb-toggle="tab"
+                  href="#skills-tabs"
+                  role="tab"
+                  aria-controls="skills-tabs"
+                  aria-selected="false"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="languages-tab"
+                  data-mdb-toggle="tab"
+                  href="#languages-tabs"
+                  role="tab"
+                  aria-controls="languages-tabs"
+                  aria-selected="false"
+                  >Languages</a
+                >
+              </li>
+            </ul>
+            <!-- #endregion Tabs nav-->
+            <!--#region Tabs content -->
+            <div
+              class="tab-content border border-darkerlight border-top-0 bg-white text-dark p-0"
+              id="resume-content"
+            >
+              <!-- #region Exprience Tab-->
+
+              <div
+                class="tab-pane fade show active"
+                id="work-tabs"
+                role="tabpanel"
+                aria-labelledby="work-tab"
+              >
+                <!-- #region Experience content-->
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        <strong>Structural Detailer / Draughtsman</strong>
+                        &nbsp;
+                        <span class="badge bg-olive">2021-2022</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- #region first experience-->
+                        <div class="row" >
+                          <div class="col-sm-12 col-md-4 pb-1">
+                            <h5>
+                              at
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name"
+                                >Vulcain Engineering Group</span
+                              >
+                            </h5>
+                            <h5>
+                              Clients
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name">Kelvion, RTE-France</span>
+                            </h5>
+                            <h6>
+                              <span class="bi bi-geo-alt-fill"></span> Nantes
+                              44300 |
+                              <span class="bi bi-geo-alt-fill"></span> Puteaux
+                              92800
+                            </h6>
+                            <h6>April 2021 - September 2022</h6>
+                          </div>
+
+                          <div class="col-sm-12 col-md-8 pb-2">
+                            <h4>
+                              <span class="bi bi-briefcase-fill"></span
+                              >&nbsp;Projects&nbsp;<span
+                                class="bi bi-three-dots-vertical"
+                              ></span
+                              >Heat exchangers handling supports, Metalwork and
+                              Electricity Pylons
+                            </h4>
+                            <p>
+                              <span class="bi bi-chevron-bar-right"></span>
+                              3D modelling and detailing of structural
+                              Steelwork.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Generating both general arrangement and
+                              fabrication drawings.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Producing reports (bill of materials (BOM),
+                              bolts…etc.) and exporting to Excel format.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Exporting NC files, Ifc and drawings to Pdf & Dwg
+                              formats.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Following specifications, calculations and if
+                              needed, discuss for updating some or all of it.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Liaising with all internal and external project
+                              teams.<br />
+                            </p>
+                          </div>
+                        </div>
+                        <!-- #endregion first experience-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        <strong>Structural Draughtsman</strong> &nbsp;
+                        <span class="badge bg-olive">2020-2021</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- #region second experience-->
+                        <div class="row">
+                          <div class="col-sm-12 col-md-4 pb-1">
+                            <h5>
+                              at
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name">Assystem</span>
+                            </h5>
+                            <h5>
+                              Client
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name">Edvance</span>
+                            </h5>
+                            <h6>
+                              <span class="bi bi-geo-alt-fill"></span> Puteaux
+                              92800
+                            </h6>
+                            <h6>April 2020 - April 2021</h6>
+                          </div>
+
+                          <div class="col-sm-12 col-md-8 pb-2">
+                            <h4>
+                              <span class="bi bi-briefcase-fill"></span
+                              >&nbsp;Project&nbsp;<span
+                                class="bi bi-three-dots-vertical"
+                              ></span
+                              >Hinkley Point C [HPC], UK nuclear power station.
+                            </h4>
+                            <p>
+                              <span class="bi bi-chevron-bar-right"></span>
+                              3D Modeling connections for many Steel
+                              platforms.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              3D modeling of entire structures like railings,
+                              stairs, ladders...and so on.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Generating very detailed general arrangement
+                              drawings.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Producing accurate material lists for each
+                              platform.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Working to tight deadlines.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Creating Tekla macros for to automate modeling
+                              tasks.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Liaising with other members of the technical team
+                              in order to set up some work methods.<br />
+                            </p>
+                          </div>
+                        </div>
+                        <!-- #endregion second experience-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        <strong>Structural Detailer / Draughtsman </strong>
+                        &nbsp;
+                        <span class="badge bg-olive">2019-2020</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- #region third experience-->
+
+                        <div class="row">
+                          <div class="col-sm-12 col-md-4 pb-1">
+                            <h5>
+                              at
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name">Vinson Frères</span>
+                            </h5>
+
+                            <h6>
+                              <span class="bi bi-geo-alt-fill"></span>
+                              Livron-sur-Drôme 26250
+                            </h6>
+                            <h6>March 2019 - April 2020</h6>
+                          </div>
+
+                          <div class="col-sm-12 col-md-8 pb-2">
+                            <h4>
+                              <span class="bi bi-briefcase-fill"></span
+                              >&nbsp;Projects&nbsp;<span
+                                class="bi bi-three-dots-vertical"
+                              ></span
+                              >Industrial buildings, Tertiary buildings,
+                              engineering and nuclear structures [ITER
+                              CADARACHE](France)
+                            </h4>
+                            <p>
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Reading and understanding structural engineers’
+                              and architect’s general arrangement drawings,
+                              design reports & specifications.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Build 3D models from scratch of steel buildings
+                              and/or structures both at tender stage and at
+                              contract stage.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Clash checking and fixing potential problems.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Identifying and communicating potential design
+                              problems to the rest of the team.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Preparing detailed assembly & fabrication drawings
+                              and bills of material.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Generating general arrangement drawings.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Sending and dispatching NC files, and all detailed
+                              drawings to workshop.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Liaising with all internal members.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Tekla Macros and add-ons making through Tekla Open
+                              API in C# language.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Applying advanced settings to Tekla structure and
+                              customising firm folder.<br />
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- #endregion third experience-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        <strong>Structural Detailer </strong> &nbsp;
+                        <span class="badge bg-olive">2016-2016</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- #region fourth experience-->
+
+                        <div class="row">
+                          <div class="col-sm-12 col-md-4 pb-1">
+                            <h5>
+                              at
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name">Baudin Chateauneuf</span>
+                            </h5>
+
+                            <h6>
+                              <span class="bi bi-geo-alt-fill"></span>
+                              Châteauneuf-sur-Loire 45110
+                            </h6>
+                            <h6>January 2019 - December 2020</h6>
+                          </div>
+
+                          <div class="col-sm-12 col-md-8 pb-2">
+                            <h4>
+                              <span class="bi bi-briefcase-fill"></span
+                              >&nbsp;Projects&nbsp;<span
+                                class="bi bi-three-dots-vertical"
+                              ></span
+                              >Flamanville nuclear power station [FA3] (France)
+                            </h4>
+                            <p>
+                              <span class="bi bi-chevron-bar-right"></span>
+                              3D Modeling and reviewing Steel platforms,
+                              railings, stairs, ladders...and so on.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Generating very detailed both general arrangement
+                              and fabrication drawings.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Producing accurate material lists and reports for
+                              each platform.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Exporting NC files and dispatching it to
+                              workshop.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Liaising with office and workshop teams.<br />
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- #endregion fourth experience-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFive"
+                      >
+                        <strong>Structural Detailer / Draughtsman</strong>
+                        &nbsp;
+                        <span class="badge bg-olive">2014-2015</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFive"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- #region fifth experience-->
+
+                        <div class="row">
+                          <div class="col-sm-12 col-md-4 pb-1">
+                            <h5>
+                              at
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name">Waltefaugle</span>
+                            </h5>
+
+                            <h6>
+                              <span class="bi bi-geo-alt-fill"></span>
+                              Dampierre-sur-Salon 70180
+                            </h6>
+                            <h6>December 2014 - December 2015</h6>
+                          </div>
+
+                          <div class="col-sm-12 col-md-8 pb-2">
+                            <h4>
+                              <span class="bi bi-briefcase-fill"></span
+                              >&nbsp;Projects&nbsp;<span
+                                class="bi bi-three-dots-vertical"
+                              ></span
+                              >Agricultural and Industrial buildings (France)
+                            </h4>
+                            <p>
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Reading and understanding structural engineers’
+                              and architect’s general arrangement drawings,
+                              design reports & specifications.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Preparing supply lists.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Build 3D models from scratch of steel buildings
+                              and/or structures.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Clash checking and fixing potential problems.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Identifying and communicating potential design
+                              problems to the rest of the team.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Preparing detailed assembly & fabrication
+                              drawings, bills of material.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Generating general arrangement drawings.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Sending and dispatching NC files, and all detailed
+                              drawings to workshop.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Working closely with work team.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Working on drawing board for old projects.<br />
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- #endregion fifth experience-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        <strong
+                          >Structural Detailer / Draughtsman (Intership)</strong
+                        >
+                        &nbsp;
+                        <span class="badge bg-olive">2013-2013</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSix"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSix"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- #region sixth experience-->
+
+                        <div class="row">
+                          <div class="col-sm-12 col-md-4 pb-1">
+                            <h5>
+                              at
+                              <span class="bi bi-arrow-return-right"></span>
+                              <span id="company-name">Roche CM</span>
+                            </h5>
+
+                            <h6>
+                              <span class="bi bi-geo-alt-fill"></span>
+                              Saint-Jean-la-Bussière 69550
+                            </h6>
+                            <h6>February 2013 - March 2013</h6>
+                          </div>
+
+                          <div class="col-sm-12 col-md-8 pb-2">
+                            <h4>
+                              <span class="bi bi-briefcase-fill"></span
+                              >&nbsp;Projects&nbsp;<span
+                                class="bi bi-three-dots-vertical"
+                              ></span
+                              >bungalows (modular buildings) and Industrial
+                              buildings (France)
+                            </h4>
+                            <p>
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Performing calculations for sections and bolts
+                              shear capacity.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Build 3D models from scratch of steel
+                              structures.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Generating general arrangement drawings.<br />
+                              <span class="bi bi-chevron-bar-right"></span>
+                              Preparing detailed assembly & fabrication
+                              drawings, bills of material.<br />
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- #endregion sixth experience-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- #endregion Experience content-->
+              </div>
+              <!-- #endregion Exprience Tab-->
+              <!-- #region Education Tab-->
+              <div
+                class="tab-pane fade"
+                id="education-tabs"
+                role="tabpanel"
+                aria-labelledby="education-tab"
+              >
+                <!-- #region first education-->
+                <div class="row p-2 border-bottom">
+                  <div class="col-sm-12 col-md-4 pb-1">
+                    <h5>
+                      at
+                      <span class="bi bi-arrow-return-right"></span>
+                      <span id="company-name">Philiance Formation</span>
+                    </h5>
+
+                    <h6>
+                      <span class="bi bi-geo-alt-fill"></span>
+                      Évry-Courcouronnes 91000, France
+                    </h6>
+                    <h6>November 2022 - July 2023</h6>
+                  </div>
+
+                  <div class="col-sm-12 col-md-8 pb-2">
+                    <h4>
+                      <span class="fa-solid fa-user-graduate"></span
+                      >&nbsp;Diploma&nbsp;<span
+                        class="bi bi-three-dots-vertical"
+                      ></span
+                      >Professional Certificate in Web and Mobile Application
+                      Development
+                      <div class="spinner-border text-lightolive" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </h4>
+                    <p>
+                      <span class="bi bi-caret-right-fill"></span>
+                      Activities and societies <br />
+
+                      &nbsp;<span class="bi bi-chevron-bar-right"></span>
+                      Building a freelance marketplace using Symfony framework
+                      combined with different packages like Twig library,
+                      Sass…and so on.<br />
+                      &nbsp;<span class="bi bi-chevron-bar-right"></span>
+                      Dealing with MySQL databases through phpMyAdmin.<br />
+
+                      &nbsp;<span class="bi bi-chevron-bar-right"></span> Using
+                      bootstrap framework with font-awesome library to create my
+                      portfolio website.<br />
+                    </p>
+                  </div>
+                </div>
+                <!-- #endregion first education-->
+
+                <!-- #region second education-->
+                <div class="row p-2">
+                  <div class="col-sm-12 col-md-4 pb-1">
+                    <h5>
+                      at
+                      <span class="bi bi-arrow-return-right"></span>
+                      <span id="company-name"
+                        >Frédéric Faÿs technical colleges</span
+                      >
+                    </h5>
+
+                    <h6>
+                      <span class="bi bi-geo-alt-fill"></span>
+                      Villeurbanne 69100, France
+                    </h6>
+                    <h6>September 2011 - June 2013</h6>
+                  </div>
+
+                  <div class="col-sm-12 col-md-8 pb-2">
+                    <h4>
+                      <span class="fa-solid fa-user-graduate"></span
+                      >&nbsp;Diploma&nbsp;<span
+                        class="bi bi-three-dots-vertical"
+                      ></span
+                      >BTS (Brevet de technicien supérieur)<br /><small
+                        class="text-lightolive"
+                        >equivalent</small
+                      >
+                      two-year post A-level course [UK]
+                    </h4>
+                    <p>
+                      <span class="bi bi-caret-right-fill"></span>
+                      Activities and societies <br />
+
+                      &nbsp;<span class="bi bi-chevron-bar-right"></span> Read
+                      and realize Structural Drawings.<br />
+                      &nbsp;<span class="bi bi-chevron-bar-right"></span>
+                      Calculate and design assemblies according to Eurocodes and
+                      CM66 standards.<br />
+                      <span class="bi bi-arrow-return-right"></span>
+                      Study of metals.<br />
+                      &nbsp;<span class="bi bi-chevron-bar-right"></span> Work
+                      on various 3D & 2D modeling softwares for steel detailing,
+                      fabrication and erection.<br />
+                    </p>
+                  </div>
+                </div>
+                <!-- #endregion second education-->
+              </div>
+              <!-- #endregion Education Tab-->
+              <!-- #region Skills Tab-->
+              <div
+                class="tab-pane fade"
+                id="skills-tabs"
+                role="tabpanel"
+                aria-labelledby="skills-tab"
+              >
+                <!-- #region Aaccordion skills-->
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushSkills"
+                >
+                  <!-- #region skill one-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOneSkill">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOneSkill"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOneSkill"
+                      >
+                        <i class="bi bi-browser-firefox fa-2xl text-olive"></i>
+                        &ensp; <span class="h3 m-0">Web</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOneSkill"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOneSkill"
+                      data-bs-parent="#accordionFlushSkills"
+                    >
+                      <div class="accordion-body">
+                        <!--#region 1st row web-->
+                        <div class="row justify-content-evently">
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>HTML5
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>CSS3
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 60%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>ReactJS
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 50%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span
+                              >Bootstrap
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 90%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Symfony
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 55%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Twig
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 80%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--#endregion 1st row web-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion skill one-->
+
+                  <!-- #region skill two-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwoSkill">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwoSkill"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwoSkill"
+                      >
+                        <i
+                          class="fa-solid fa-laptop-code fa-2xl text-olive"
+                        ></i>
+                        &ensp; <span class="h3 m-0">Programming</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwoSkill"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwoSkill"
+                      data-bs-parent="#accordionFlushSkills"
+                    >
+                      <div class="accordion-body">
+                        <!--#region 1st row programming-->
+                        <div class="row justify-content-evently">
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>C#
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 65%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>PHP
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 70%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span
+                              >JavaScript
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 70%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Sass
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 66%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>SQL
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 80%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Twig
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--#endregion 1st row programming-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion skill two-->
+
+                  <!-- #region skill three-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThreeSkill">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThreeSkill"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThreeSkill"
+                      >
+                        <i class="fa-solid fa-desktop fa-2xl text-olive"></i>
+                        &ensp; <span class="h3 m-0">Operating Systems</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThreeSkill"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThreeSkill"
+                      data-bs-parent="#accordionFlushSkills"
+                    >
+                      <div class="accordion-body">
+                        <!--#region 1st row web-->
+                        <div class="row justify-content-evently">
+                          <div
+                            class="col-sm-12 col-md-6 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span
+                                class="bi bi-windows fa-xl text-lightolive"
+                              ></span>
+                              Microsoft Windows
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 85%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span
+                                class="bi bi-apple fa-xl text-lightolive"
+                              ></span
+                              >macOS
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 85%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--#endregion 1st row web-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion skill three-->
+
+                  <!-- #region skill fourth-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFouthSkill">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFouthSkill"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFouthSkill"
+                      >
+                        <i class="fa-solid fa-cubes fa-2xl text-olive"></i>
+                        &ensp; <span class="h3 m-0">Design & Modelling</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFouthSkill"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFouthSkill"
+                      data-bs-parent="#accordionFlushSkills"
+                    >
+                      <div class="accordion-body">
+                        <!--#region 1st row -->
+                        <div class="row justify-content-evently">
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Tekla
+                              structures
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 90%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Bocad
+                              3d
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 77%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Autocad
+                              2D
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 66%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Autocad
+                              3D
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Advance
+                              Steel
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 45%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Revit
+                              architecture
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 59%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Google
+                              sketchup
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 50%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Trimble
+                              connect
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 99%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--#endregion 1st row -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion skill fourth-->
+
+                  <!-- #region skill fifth-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFifthSkill">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFifthSkill"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFifthSkill"
+                      >
+                        <i class="fa-solid fa-palette fa-2xl text-olive"></i>
+                        &ensp; <span class="h3 m-0">Graphical</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFifthSkill"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFifthSkill"
+                      data-bs-parent="#accordionFlushSkills"
+                    >
+                      <div class="accordion-body">
+                        <!--#region 1st row -->
+                        <div class="row justify-content-evently">
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span
+                              >Photoshop
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 55%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span
+                              >Illustrator
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Adobe
+                              XD
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 80%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Sketch
+                              
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 60%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span
+                              >CorelDraw Steel
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 60%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--#endregion 1st row -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion skill fifth-->
+
+                  <!-- #region skill sixth-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSixthSkill">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSixthSkill"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSixthSkill"
+                      >
+                        <i class="fa-solid fa-video fa-2xl text-olive"></i>
+                        &ensp; <span class="h3 m-0">Multimedia</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSixthSkill"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSixthSkill"
+                      data-bs-parent="#accordionFlushSkills"
+                    >
+                      <div class="accordion-body">
+                        <!--#region 1st row -->
+                        <div class="row justify-content-evently">
+                          <div
+                            class="col-sm-12 col-md-6 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>After
+                              Effects
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 51%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span
+                              >Premiere Pro
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 55%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--#endregion 1st row -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion skill sixth-->
+
+                  <!-- #region skill seventh-->
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeventhSkill">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeventhSkill"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSeventhSkill"
+                      >
+                        <i class="fa-solid fa-pen-clip fa-2xl text-olive"></i>
+                        &ensp; <span class="h3 m-0">Desktop</span>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSeventhSkill"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSeventhSkill"
+                      data-bs-parent="#accordionFlushSkills"
+                    >
+                      <div class="accordion-body">
+                        <!--#region 1st row programming-->
+                        <div class="row justify-content-evently">
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Office
+                              365
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Google
+                              Drive
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Teams
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 85%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>Zoom
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 85%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span>One
+                              Drive
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 70%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-sm-12 col-md-6 col-xl-3 justify-content-between p-1"
+                          >
+                            <h4>
+                              <span class="bi bi-arrow-bar-right"></span
+                              >Microsoft Project
+                            </h4>
+
+                            <div class="progress">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-toolightolive"
+                                role="progressbar"
+                                style="width: 35%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--#endregion 1st row programming-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion skill seventh-->
+                </div>
+                <!-- #endregion Aaccordion skills-->
+              </div>
+              <!-- #endregion Skills Tab-->
+              <!-- #region Languages Tab-->
+              <div
+                class="tab-pane fade"
+                id="languages-tabs"
+                role="tabpanel"
+                aria-labelledby="languages-tab"
+              >
+                <div class="row p-1">
+                  <div class="col-sm-12 col-md-6 col-xl-3 text-center p-1">
+                    <h2>English</h2>
+                    <img
+                      class="rounded float-left"
+                      height="100"
+                      src="./images/uk-flag.svg"
+                      alt=" France's flag"
+                    />
+                    <div class="text-center my-auto text-lightolive pt-2">
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-half fa-xl"></i>
+                      <i class="bi bi-star fa-xl"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6 col-xl-3 text-center p-1">
+                    <h2>French</h2>
+                    <img
+                      class="rounded float-left"
+                      height="100"
+                      src="./images/france-flag.svg"
+                      alt=" France's flag"
+                    />
+                    <div class="text-center my-auto text-lightolive pt-2">
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-half fa-xl"></i>
+                      <i class="bi bi-star fa-xl"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6 col-xl-3 text-center p-1">
+                    <h2>Arabic</h2>
+                    <img
+                      class="rounded float-left"
+                      height="100"
+                      src="./images/ksa-flag.svg"
+                      alt=" France's flag"
+                    />
+                    <div class="text-center my-auto text-lightolive pt-2">
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star fa-xl"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6 col-xl-3 text-center p-1">
+                    <h2>German</h2>
+                    <img
+                      class="rounded float-left"
+                      height="100"
+                      src="./images/germany-flag.svg"
+                      alt=" France's flag"
+                    />
+                    <div class="text-center my-auto text-lightolive pt-2">
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star-fill fa-xl"></i>
+                      <i class="bi bi-star fa-xl"></i>
+                      <i class="bi bi-star fa-xl"></i>
+                      <i class="bi bi-star fa-xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- #endregion Languages Tab-->
+              <!--#endregion Tabs content -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion Section Resume-->
+
+      <!-- #region Section Projects-->
+
+      <section class="mb-5 mt-5" id="projects-section">
+        <h1 class="display-1 p-3 text-end text-darkerlight">Projects</h1>
+
+        <div class="row text-center m-0">
+          <i class="col-12 col-lg-3 bi bi-pc-display fa-5x text-lightolive"></i>
+          <!-- #region content projects-->
+          <div class="col-12 col-lg-9 col-xxl-6 text-start">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card">
+                  <iframe
+                    class="card-img-top"
+                    width="auto"
+                    height="300"
+                    src="https://www.youtube.com/embed/8QvX9NNa-lA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Project on Advance Steel</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <!-- #region Model-->
+                    <!-- Button trigger modal -->
+                    <div class="text-end">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        More details...
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="staticBackdropLabel"
+                            >
+                              Modal title
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">...</div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Understood
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #endregion Model-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <iframe
+                    class="card-img-top"
+                    width="auto"
+                    height="300"
+                    src="https://www.youtube.com/embed/Lu0KY7cXY04"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Project on Revit Architecture</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <!-- #region Model-->
+                    <!-- Button trigger modal -->
+                    <div class="text-end">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        More details...
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="staticBackdropLabel"
+                            >
+                              Modal title
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">...</div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Understood
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #endregion Model-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <iframe
+                    class="card-img-top"
+                    width="auto"
+                    height="300"
+                    src="https://www.youtube.com/embed/e2eqC4V9Ibs"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Project on Tekla structure</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <!-- #region Model-->
+                    <!-- Button trigger modal -->
+                    <div class="text-end">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        More details...
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="staticBackdropLabel"
+                            >
+                              Modal title
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">...</div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Understood
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #endregion Model-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <iframe
+                    class="card-img-top"
+                    width="auto"
+                    height="300"
+                    src="https://www.youtube.com/embed/EFQ8PfnyNPw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Project on Bocad 3D</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <!-- #region Model-->
+                    <!-- Button trigger modal -->
+                    <div class="text-end">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        More details...
+                      </button>
+                    </div>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="staticBackdropLabel"
+                            >
+                              Modal title
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">...</div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Understood
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #endregion Model-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion content projects-->
+        </div>
+      </section>
+      <!-- #endregion Section Projects-->
+
+      <!-- #region Section Contact-->
+
+      <section class="mb-5 mt-5" id="contact-section">
+        <h1 class="display-1 p-3 text-end text-darkerlight">Contact</h1>
+
+        <div class="row text-center m-0">
+          <i
+            class="col-12 col-lg-3 bi bi-envelope-at fa-5x text-lightolive"
+          ></i>
+          <div class="col-12 col-lg-9 col-xxl-6 text-start">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="validationServer01" class="form-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control is-valid"
+                  id="validationServer01"
+                                    required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationServer01" class="form-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control is-valid"
+                  id="validationServer01"
+                                    required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationServerUsername" class="form-label"
+                  >Email</label
+                >
+                <div class="input-group has-validation">
+                  <span class="bi bi-envelope-at-fill text-olive input-group-text" id="inputGroupPrepend3"
+                    ></span
+                  >
+                  <input
+                    type="text"
+                    class="form-control is-invalid"
+                    id="validationServerUsername"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                    required
+                  />
+                  <div
+                    id="validationServerUsernameFeedback"
+                    class="invalid-feedback"
+                  >
+                    Email not correct.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationServerUsername" class="form-label"
+                  >Phone</label
+                >
+                <div class="input-group has-validation">
+                  <span class="bi bi-telephone-fill text-olive input-group-text" id="inputGroupPrepend3"
+                    ></span
+                  >
+                  <input
+                    type="text"
+                    class="form-control is-invalid"
+                    id="validationServerUsername"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                    required
+                  />
+                  <div
+                    id="validationServerUsernameFeedback"
+                    class="invalid-feedback"
+                  >
+                    Email not correct.
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="col-md-3">
+                <select
+                  class="form-select"
+                  required
+                  aria-label="select example"
+                >
+                  <option value="">Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="invalid-feedback">
+                  Example invalid select feedback
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="validationTextarea" class="form-label"
+                  >Textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="validationTextarea"
+                  rows="15"
+                  placeholder="Required example textarea"
+                  required
+                ></textarea>
+              </div>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input is-invalid"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck3"
+                    aria-describedby="invalidCheck3Feedback"
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                  </label>
+                  <div id="invalidCheck3Feedback" class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion Section Contact-->
+
+    </main>
+
+    <!-- #endregion MAIN-->
+
+    <!-- #region FOOTER-->
+
+    <footer
+      id="footer"
+      class="text-center text-lg-start text-muted shadow rounded mt-5 pt-5"
+    >
+      <!-- Section: Links  -->
+      <section class="text-dark">
+        <div class="container text-center text-md-start p-2">
+          <!-- Grid row -->
+          <div class="row pt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img
+                  src="./images/favicon.ico"
+                  height="50"
+                  alt="logo KE"
+                  class="p-2"
+                />
+                Kamel ESSRIDI
+              </h6>
+              <p>
+                This is my portfolio website designed by me and I worked it with
+                bootstrap 5 library. Here, i show some of my personal projects
+                and let people know me better throughout my career.
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4 px-1 rounded">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.0749067197016!2d2.4481035161736497!3d48.6275486248858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e0bb64158b83%3A0xa4de4bcfdb82751e!2s24%20Rue%20Alphonse%20Daudet%2C%2091000%20%C3%89vry-Courcouronnes!5e0!3m2!1sen!2sfr!4v1678215827992!5m2!1sen!2sfr"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 d-block">Contact</h6>
+              <p class="d-block mb-4">
+                <i class="fas fa-home fa-xl text-toodarkerlight"></i>
+                Évry-Courcouronnes, 91000, FRANCE
+              </p>
+
+              <a
+                href="mailto:contact@kamel-essridi.com"
+                class="d-block mb-4 text-decoration-none text-dark"
+              >
+                <i class="fas fa-envelope fa-xl text-toodarkerlight"></i>
+                contact@kamel-essridi.com
+              </a>
+
+              <a
+                href="tel:+33646067512"
+                class="d-block mb-4 text-decoration-none text-dark"
+              >
+                <i class="fas fa-phone fa-xl text-toodarkerlight"></i>
+                (+33) 6 46 06 75 12
+              </a>
+
+              <p class="d-block mb-4">
+                <i class="fas fa-print fa-xl text-toodarkerlight"></i> Print my
+                CV
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <section
+          class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom"
+        >
+          <a
+            href="https://www.youtube.com/channel/UCA_UpBvFtE_sry31oX3e87A"
+            target="_blank"
+            class="me-4 link-primary"
+          >
+            <i class="fab fa-youtube fa-2xl"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/kamel-essridi"
+            target="_blank"
+            class="me-4 link-primary"
+          >
+            <i class="fab fa-linkedin fa-2xl"></i>
+          </a>
+          <a
+            href="https://github.com/ESSRIDI"
+            target="_blank"
+            class="me-4 link-primary"
+          >
+            <i class="fab fa-github fa-2xl"></i>
+          </a>
+        </section>
+        <!-- Section: Social media -->
+      </section>
+      <!-- Section: Links  -->
+
+      <div class="text-center p-4 bg-toolight">
+        &#169; 2023 Copyright
+        <a class="text-reset fw-bold" href="https://kamel-essridi.com/"
+          >kamel-essridi.com</a
+        >
+      </div>
+    </footer>
+
+    <!-- #endregion FOOTER-->
+  </body>
+</html>
